@@ -89,5 +89,5 @@ Python, pandas, NumPy, Matplotlib, Seaborn, Sweetviz, HTML/CSS/JavaScript (paine
 
 ## Autora
 
-**Ana Maria**, engenheira de produção, mestre em Engenharia Têxtil, em especialização em análise de dados.
+**Ana Maria Dias**, engenheira de produção, mestre em Engenharia Têxtil, em especialização em análise de dados.
 [LinkedIn](https://www.linkedin.com/in/anamariadias) · [GitHub](https://github.com/Engineer-Ana)
