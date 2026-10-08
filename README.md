@@ -66,9 +66,13 @@ relatorio = sv.analyze(df)                       # df = base já carregada
 relatorio.show_html("relatorio_sweetviz_cancer.html")
 ```
 
-## Painel interativo
+## 📊 Análise Exploratória de Dados (EDA)
 
-`painel_cancer_mama.html` é um arquivo único, sem dependências: basta abri-lo no navegador. Para cada medida escolhida, mostra:
+Foi gerado um relatório automatizado de estatística descritiva utilizando a biblioteca Sweetviz. O dashboard interativo apresenta mapas de calor, distribuição de variáveis e análise de correlação.
+
+👉 **[Acessar o Dashboard Interativo (Sweetviz)](https://Engineer-Ana.github.io/LeegaAcademy-Datavis_Usando_Python/relatorio_sweetviz_cancer_Ana.html)**
+
+Para cada medida escolhida, mostra:
 
 - estatística descritiva por grupo (média, mediana, desvio, quartis, assimetria, outliers);
 - histograma e boxplot comparando benignos e malignos;
