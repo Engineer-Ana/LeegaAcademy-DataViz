@@ -73,7 +73,9 @@ Foi gerado um relatório automatizado de estatística descritiva utilizando a bi
 ### Pré-visualização do Dashboard
 ![Dashboard Sweetviz - Dados de Câncer de Mama](DataVizCancer.png)
 
-👉 **[Acessar o Dashboard Interativo Completo](https://github.com/Engineer-Ana/LeegaAcademy-Datavis_Usando_Python/blob/main/EAD_cancer.html)** 
+## Ver online
+- [Painel interativo](https://engineer-ana.github.io/LeegaAcademy-Datavis_Usando_Python/painel_cancer_mama.html)
+- [Relatório Sweetviz](https://engineer-ana.github.io/LeegaAcademy-Datavis_Usando_Python/EAD_cancer.html)
 
 Para cada medida escolhida, mostra:
 
@@ -96,5 +98,5 @@ Python, pandas, NumPy, Matplotlib, Seaborn, Sweetviz, HTML/CSS/JavaScript (paine
 
 ## Autora
 
-**Ana Maria Dias**, engenheira de produção, mestre em Engenharia Têxtil, em especialização em análise de dados.
+**Ana Maria Dias**, Engenheira de produção, Mestra em Engenharia Têxtil, em especialização em análise de dados.
 [LinkedIn](https://www.linkedin.com/in/anamariadias) · [GitHub](https://github.com/Engineer-Ana)
