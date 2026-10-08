@@ -73,7 +73,7 @@ Foi gerado um relatório automatizado de estatística descritiva utilizando a bi
 ### Pré-visualização do Dashboard
 ![Dashboard Sweetviz - Dados de Câncer de Mama](DataVizCancer.png)
 
-👉 **[Acessar o Dashboard Interativo Completo](https://Engineer-Ana.github.io/LeegaAcademy-Datavis_Usando_Python/relatorio_sweetviz_cancer_Ana.html)**
+👉 **[Acessar o Dashboard Interativo Completo](https://github.com/Engineer-Ana/LeegaAcademy-Datavis_Usando_Python/blob/main/EAD_cancer.html)** 
 
 Para cada medida escolhida, mostra:
 
