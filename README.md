@@ -70,7 +70,10 @@ relatorio.show_html("relatorio_sweetviz_cancer.html")
 
 Foi gerado um relatório automatizado de estatística descritiva utilizando a biblioteca Sweetviz. O dashboard interativo apresenta mapas de calor, distribuição de variáveis e análise de correlação.
 
-👉 **[Acessar o Dashboard Interativo (Sweetviz)](https://Engineer-Ana.github.io/LeegaAcademy-Datavis_Usando_Python/relatorio_sweetviz_cancer_Ana.html)**
+### Pré-visualização do Dashboard
+![Dashboard Sweetviz - Dados de Câncer de Mama](DataVizCancer.jpg)
+
+👉 **[Acessar o Dashboard Interativo Completo](https://Engineer-Ana.github.io/LeegaAcademy-Datavis_Usando_Python/relatorio_sweetviz_cancer_Ana.html)**
 
 Para cada medida escolhida, mostra:
 
