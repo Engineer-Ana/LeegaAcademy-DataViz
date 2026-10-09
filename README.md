@@ -2,6 +2,26 @@
 
 Projeto do módulo **Visualização e Storytelling de Dados** (Leega Academy). O cenário é uma simulação: um hospital quer entender uma base de diagnósticos de câncer de mama antes de usá-la para alimentar seus algoritmos de IA. O foco é nos **insights** e na forma de comunicá-los, não na complexidade de modelos.
 
+## Ver online
+
+- [Painel interativo](https://engineer-ana.github.io/LeegaAcademy-Datavis_Usando_Python/painel_cancer_mama.html)
+- [Relatório Sweetviz](https://engineer-ana.github.io/LeegaAcademy-Datavis_Usando_Python/EAD_cancer.html)
+
+### Painel interativo
+
+Para cada medida escolhida, mostra:
+
+- estatística descritiva por grupo (média, mediana, desvio, quartis, assimetria, outliers);
+- histograma e boxplot comparando benignos e malignos;
+- matriz de correlação clicável;
+- gráfico de dispersão entre duas medidas.
+
+O painel cobre as 10 variáveis `_mean`. O notebook analisa as 30.
+
+## Tecnologias
+
+Python, pandas, NumPy, Matplotlib, Seaborn, Sweetviz, HTML/CSS/JavaScript (painel).
+
 ## Pergunta de negócio
 
 O hospital levantou cinco perguntas:
@@ -29,7 +49,7 @@ O hospital levantou cinco perguntas:
 | 2 | Distribuições | Maioria com cauda longa à direita (só 4 das 30 variáveis são quase simétricas). O grupo maligno se desloca para valores maiores, sobretudo em tamanho e irregularidade dos núcleos. |
 | 3 | Outliers | 171 amostras (30%) têm ao menos um valor fora do padrão (regra de Tukey, 1,5·IIQ). **77% dos pontos atípicos estão em casos malignos.** |
 | 4 | Correlações | Mais associadas ao diagnóstico: `concave points_worst`, `perimeter_worst`, `concave points_mean`, `radius_worst` (r ≈ 0,78 a 0,79). Raio, perímetro e área são redundantes (r > 0,97). Há 21 pares com \|r\| > 0,9. |
-| 5 | Painel | Painel interativo em HTML (ver abaixo) e relatório automático com Sweetviz. |
+| 5 | Painel | Painel interativo e relatório automático com Sweetviz (links em "Ver online"). |
 
 **Recomendações ao cliente**
 - Não remover outliers automaticamente: tumores grandes e irregulares são clinicamente reais. Revisar os mais extremos com a equipe médica.
@@ -40,56 +60,44 @@ O hospital levantou cinco perguntas:
 
 ```
 .
-├── Cancer_Data.csv     # dados 
-├── DataVizCancer.png         
-├── DataViz_Cancer_EDA.ipynb           # análise completa (perguntas 1 a 4)
-├── EAD_cancer.html         # relatório automático (pergunta 5)
+├── Cancer_Data.csv            # dados
+├── DataVizCancer.png          # prévia do relatório Sweetviz
+├── DataViz_Cancer_EDA.ipynb   # análise completa (perguntas 1 a 4)
+├── EAD_cancer.html            # relatório automático (pergunta 5)
 ├── README.md
-└── painel_cancer_mama.html  # painel interativo (pergunta 5) 
+└── painel_cancer_mama.html    # painel interativo (pergunta 5)
 ```
 
 ## Como executar
 
 ```bash
-git clone https://github.com/Engineer-Ana/dataviz-cancer-mama-eda.git
-cd dataviz-cancer-mama-eda
+git clone https://github.com/Engineer-Ana/LeegaAcademy-Datavis_Usando_Python.git
+cd LeegaAcademy-Datavis_Usando_Python
 pip install pandas numpy matplotlib seaborn sweetviz jupyter
-jupyter notebook Datavis_Cancer_EAD.ipynb
+jupyter notebook DataViz_Cancer_EDA.ipynb
 ```
 
-No Google Colab, envie o `Cancer_Data.csv` para a sessão (ou use `!wget` com o link "raw" do arquivo neste repositório) antes de rodar o notebook.
+No Google Colab, envie o `Cancer_Data.csv` para a sessão ou baixe direto do repositório antes de rodar o notebook:
+
+```python
+!wget https://raw.githubusercontent.com/Engineer-Ana/LeegaAcademy-Datavis_Usando_Python/main/Cancer_Data.csv
+```
 
 Para gerar o relatório Sweetviz:
 
 ```python
 import sweetviz as sv
-relatorio = sv.analyze(df)                       # df = base já carregada
-relatorio.show_html("relatorio_sweetviz_cancer.html")
+relatorio = sv.analyze(df)                 # df = base já carregada
+relatorio.show_html("EAD_cancer.html")
 ```
 
-## 📊 Análise Exploratória de Dados (EDA)
+## Relatório Sweetviz (EDA automatizada)
 
-Foi gerado um relatório automatizado de estatística descritiva utilizando a biblioteca Sweetviz. O dashboard interativo apresenta mapas de calor, distribuição de variáveis e análise de correlação.
+Foi gerado um relatório automatizado de estatística descritiva com a biblioteca Sweetviz, com mapas de calor, distribuição de variáveis e análise de correlação. A versão interativa para consulta dos médicos é o painel descrito acima.
 
-### Pré-visualização do Dashboard
-![Dashboard Sweetviz - Dados de Câncer de Mama](DataVizCancer.png)
+### Pré-visualização
 
-## Ver online
-- [Painel interativo](https://engineer-ana.github.io/LeegaAcademy-Datavis_Usando_Python/painel_cancer_mama.html)
-- [Relatório Sweetviz](https://engineer-ana.github.io/LeegaAcademy-Datavis_Usando_Python/EAD_cancer.html)
-
-Para cada medida escolhida, mostra:
-
-- estatística descritiva por grupo (média, mediana, desvio, quartis, assimetria, outliers);
-- histograma e boxplot comparando benignos e malignos;
-- matriz de correlação clicável;
-- gráfico de dispersão entre duas medidas.
-
-O painel cobre as 10 variáveis `_mean`. O notebook analisa as 30.
-
-## Tecnologias
-
-Python, pandas, NumPy, Matplotlib, Seaborn, Sweetviz, HTML/CSS/JavaScript (painel).
+![Relatório Sweetviz - Dados de Câncer de Mama](DataVizCancer.png)
 
 ## Limitações
 
