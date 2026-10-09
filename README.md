@@ -4,9 +4,8 @@ Projeto do módulo **Visualização e Storytelling de Dados** (Leega Academy). O
 
 ## Ver online
 
-- [Painel interativo](https://engineer-ana.github.io/LeegaAcademy-Datavis_Usando_Python/painel_cancer_mama.html)
-- [Relatório Sweetviz](https://engineer-ana.github.io/LeegaAcademy-Datavis_Usando_Python/relatorio_sweetviz_cancer.html)
-
+- [Painel interativo](https://engineer-ana.github.io/LeegaAcademy-DataViz/painel_cancer_mama.html)
+- [Relatório Sweetviz](https://engineer-ana.github.io/LeegaAcademy-DataViz/relatorio_sweetviz_cancer.html)
 ### Painel interativo
 
 Para cada medida escolhida, mostra:
@@ -71,8 +70,8 @@ O hospital levantou cinco perguntas:
 ## Como executar
 
 ```bash
-git clone https://github.com/Engineer-Ana/LeegaAcademy-Datavis_Usando_Python.git
-cd LeegaAcademy-Datavis_Usando_Python
+git clone https://github.com/Engineer-Ana/LeegaAcademy-DataViz.git
+cd LeegaAcademy-DataViz
 pip install pandas numpy matplotlib seaborn sweetviz jupyter
 jupyter notebook DataViz_Cancer_EDA.ipynb
 ```
@@ -80,7 +79,7 @@ jupyter notebook DataViz_Cancer_EDA.ipynb
 No Google Colab, envie o `Cancer_Data.csv` para a sessão ou baixe direto do repositório antes de rodar o notebook:
 
 ```python
-!wget https://raw.githubusercontent.com/Engineer-Ana/LeegaAcademy-Datavis_Usando_Python/main/Cancer_Data.csv
+!wget https://raw.githubusercontent.com/Engineer-Ana/LeegaAcademy-DataViz/main/Cancer_Data.csv
 ```
 
 Para gerar o relatório Sweetviz:
