@@ -42,7 +42,7 @@ O hospital levantou cinco perguntas:
 .
 ├── Cancer_Data.csv     # dados 
 ├── DataVizCancer.png         
-├── Datavis_Cancer_Leega.ipynb            # análise completa (perguntas 1 a 4)
+├── DataViz_Cancer_EDA.ipynb           # análise completa (perguntas 1 a 4)
 ├── EAD_cancer.html         # relatório automático (pergunta 5)
 ├── README.md
 └── painel_cancer_mama.html  # painel interativo (pergunta 5) 
