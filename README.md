@@ -60,13 +60,12 @@ O hospital levantou cinco perguntas:
 
 ```
 .
-├── Cancer_Data.csv            # dados
-├── DataVizCancer.png          # prévia do relatório Sweetviz
-├── DataViz_Cancer_EDA.ipynb   # análise completa (perguntas 1 a 4)
-├── EAD_cancer.html            # relatório automático (pergunta 5)
+├── Cancer_Data.csv                 # dados
+├── DataVizCancer.png               # prévia do relatório Sweetviz
+├── DataViz_Cancer_EDA.ipynb        # análise completa (perguntas 1 a 4)
 ├── README.md
-├── painel_cancer_mama.html    # painel interativo (pergunta 5)
-└── relatorio_sweetviz_cancer.html # painel semi interativo Sweetviz
+├── painel_cancer_mama.html         # painel interativo (pergunta 5)
+└── relatorio_sweetviz_cancer.html  # relatório automático Sweetviz, semi interativo (pergunta 5)
 ```
 
 ## Como executar
@@ -89,7 +88,7 @@ Para gerar o relatório Sweetviz:
 ```python
 import sweetviz as sv
 relatorio = sv.analyze(df)                 # df = base já carregada
-relatorio.show_html("EAD_cancer.html")
+relatorio.show_html("relatorio_sweetviz_cancer.html")
 ```
 
 ## Relatório Sweetviz (EDA automatizada)
