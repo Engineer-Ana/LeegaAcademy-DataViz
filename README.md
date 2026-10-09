@@ -5,7 +5,7 @@ Projeto do módulo **Visualização e Storytelling de Dados** (Leega Academy). O
 ## Ver online
 
 - [Painel interativo](https://engineer-ana.github.io/LeegaAcademy-Datavis_Usando_Python/painel_cancer_mama.html)
-- [Relatório Sweetviz](https://engineer-ana.github.io/LeegaAcademy-Datavis_Usando_Python/EAD_cancer.html)
+- [Relatório Sweetviz](https://engineer-ana.github.io/LeegaAcademy-Datavis_Usando_Python/relatorio_sweetviz_cancer.html)
 
 ### Painel interativo
 
