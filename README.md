@@ -40,11 +40,12 @@ O hospital levantou cinco perguntas:
 
 ```
 .
+├── Cancer_Data.csv     # dados 
+├── DataVizCancer.png         
+├── Datavis_Cancer_Leega.ipynb            # análise completa (perguntas 1 a 4)
+├── EAD_cancer.html         # relatório automático (pergunta 5)
 ├── README.md
-├── Datavis_Cancer_EAD.ipynb        # análise completa (perguntas 1 a 4)
-├── Cancer_Data.csv                 # dados
-├── painel_cancer_mama.html         # painel interativo (pergunta 5)
-└── relatorio_sweetviz_cancer.html  # relatório automático (pergunta 5)
+└── painel_cancer_mama.html  # painel interativo (pergunta 5) 
 ```
 
 ## Como executar
