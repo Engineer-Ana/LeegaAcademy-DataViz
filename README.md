@@ -65,7 +65,8 @@ O hospital levantou cinco perguntas:
 ├── DataViz_Cancer_EDA.ipynb   # análise completa (perguntas 1 a 4)
 ├── EAD_cancer.html            # relatório automático (pergunta 5)
 ├── README.md
-└── painel_cancer_mama.html    # painel interativo (pergunta 5)
+├── painel_cancer_mama.html    # painel interativo (pergunta 5)
+└── relatorio_sweetviz_cancer.html # painel semi interativo Sweetviz
 ```
 
 ## Como executar
